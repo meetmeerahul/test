@@ -1,0 +1,1 @@
+db.student.aggregate([{$group : {_id : "$course", num_student : {$sum : 1}}}])
